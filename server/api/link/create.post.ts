@@ -1,3 +1,4 @@
+// Add this
 import { LinkSchema } from '@@/schemas/link'
 
 defineRouteMeta({
