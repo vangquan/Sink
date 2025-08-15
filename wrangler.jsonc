@@ -1,0 +1,30 @@
+{
+  "name": "sink",
+  "main": "dist/server/index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "dist/public"
+  },
+  "compatibility_date": "2025-08-15", // Updated to current date
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "keep_vars": true,
+  "upload_source_maps": true,
+  // "NUXT_SITE_TOKEN" was removed as it is not safe to include in wrangler.jsonc
+  "ai": {
+    "binding": "AI" // Optional; remove if not using AI features
+  },
+  "analytics_engine_datasets": [
+    {
+      "binding": "ANALYTICS",
+      "dataset": "sink"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "532aaf08fdf3442aae929fd3df14f265" // Verify this matches your KV namespace ID
+    }
+  ]
+}
