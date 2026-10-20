@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  // Same name as the Worker already running in Cloudflare, so a deploy replaces its code.
+  "name": "zalo-smartlinks-worker",
+  "main": "src/index.js",
+  "compatibility_date": "2025-08-20",
+  // Routes are intentionally not declared here: the existing route or custom domain
+  // stays as configured in the Cloudflare dashboard. See README.md.
+  "analytics_engine_datasets": [
+    {
+      "binding": "CLICKS",
+      "dataset": "zalo_clicks"
+    }
+  ]
+}
