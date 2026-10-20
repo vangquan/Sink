@@ -7,7 +7,7 @@ colors:
   card-foreground: "oklch(0.141 0.005 285.823)"
   popover: "oklch(1 0 0)"
   popover-foreground: "oklch(0.141 0.005 285.823)"
-  primary: "oklch(0.21 0.006 285.885)"
+  primary: "oklch(0.507 0.104 86.485)"
   primary-foreground: "oklch(0.985 0 0)"
   secondary: "oklch(0.967 0.001 286.375)"
   secondary-foreground: "oklch(0.21 0.006 285.885)"
@@ -20,7 +20,7 @@ colors:
   destructive: "oklch(0.577 0.245 27.325)"
   border: "oklch(0.92 0.004 286.32)"
   input: "oklch(0.92 0.004 286.32)"
-  ring: "oklch(0.705 0.015 286.067)"
+  ring: "oklch(0.507 0.104 86.485)"
   chart-1: "oklch(0.871 0.15 154.449)"
   chart-2: "oklch(0.723 0.219 149.579)"
   chart-3: "oklch(0.627 0.194 149.214)"
@@ -28,12 +28,12 @@ colors:
   chart-5: "oklch(0.448 0.119 151.328)"
   sidebar: "oklch(0.985 0 0)"
   sidebar-foreground: "oklch(0.141 0.005 285.823)"
-  sidebar-primary: "oklch(0.21 0.006 285.885)"
+  sidebar-primary: "oklch(0.507 0.104 86.485)"
   sidebar-primary-foreground: "oklch(0.985 0 0)"
-  sidebar-accent: "oklch(0.967 0.001 286.375)"
+  sidebar-accent: "oklch(0.919 0.018 89.363)"
   sidebar-accent-foreground: "oklch(0.21 0.006 285.885)"
   sidebar-border: "oklch(0.92 0.004 286.32)"
-  sidebar-ring: "oklch(0.705 0.015 286.067)"
+  sidebar-ring: "oklch(0.507 0.104 86.485)"
   background: "oklch(1 0 0)"
   foreground: "oklch(0.141 0.005 285.823)"
   dark-background: "oklch(0.141 0.005 285.823)"
@@ -42,7 +42,7 @@ colors:
   dark-card-foreground: "oklch(0.985 0 0)"
   dark-popover: "oklch(0.21 0.006 285.885)"
   dark-popover-foreground: "oklch(0.985 0 0)"
-  dark-primary: "oklch(0.92 0.004 286.32)"
+  dark-primary: "oklch(0.781 0.11 88.9)"
   dark-primary-foreground: "oklch(0.21 0.006 285.885)"
   dark-secondary: "oklch(0.274 0.006 286.033)"
   dark-secondary-foreground: "oklch(0.985 0 0)"
@@ -55,7 +55,7 @@ colors:
   dark-destructive: "oklch(0.704 0.191 22.216)"
   dark-border: "oklch(1 0 0 / 10%)"
   dark-input: "oklch(1 0 0 / 15%)"
-  dark-ring: "oklch(0.552 0.016 285.938)"
+  dark-ring: "oklch(0.781 0.11 88.9)"
   dark-chart-1: "oklch(0.871 0.15 154.449)"
   dark-chart-2: "oklch(0.723 0.219 149.579)"
   dark-chart-3: "oklch(0.627 0.194 149.214)"
@@ -63,12 +63,12 @@ colors:
   dark-chart-5: "oklch(0.448 0.119 151.328)"
   dark-sidebar: "oklch(0.21 0.006 285.885)"
   dark-sidebar-foreground: "oklch(0.985 0 0)"
-  dark-sidebar-primary: "oklch(0.488 0.243 264.376)"
-  dark-sidebar-primary-foreground: "oklch(0.985 0 0)"
-  dark-sidebar-accent: "oklch(0.274 0.006 286.033)"
+  dark-sidebar-primary: "oklch(0.781 0.11 88.9)"
+  dark-sidebar-primary-foreground: "oklch(0.21 0.006 285.885)"
+  dark-sidebar-accent: "oklch(0.302 0.017 86.886)"
   dark-sidebar-accent-foreground: "oklch(0.985 0 0)"
   dark-sidebar-border: "oklch(1 0 0 / 10%)"
-  dark-sidebar-ring: "oklch(0.552 0.016 285.938)"
+  dark-sidebar-ring: "oklch(0.781 0.11 88.9)"
 typography:
   sans:
     fontFamily: "IBM Plex Sans, sans-serif"
@@ -101,7 +101,7 @@ This file is a derived summary for design-aware agents. If it conflicts with `ap
 
 ## Colors
 
-The unprefixed tokens reproduce the semantic roles in `:root`; `dark-*` tokens flatten the corresponding `.dark` values. Always use roles as intended and keep each background paired with its foreground. The green `chart-1` through `chart-5` sequence is for charts only. Use `success` for positive status and completion indicators, `ring` for focus emphasis, and `destructive` for destructive or invalid states, including their dark-mode counterparts.
+The unprefixed tokens reproduce the semantic roles in `:root`; `dark-*` tokens flatten the corresponding `.dark` values. Always use roles as intended and keep each background paired with its foreground. `primary`, `ring`, and the sidebar primary and ring roles carry the brand gold (`#7F6000` in light mode, `#D4B460` in dark mode); `sidebar-accent` is a light gold tint of the sidebar surface used for navigation hover and active states. Other neutral roles stay zinc. The green `chart-1` through `chart-5` sequence is for charts only. Use `success` for positive status and completion indicators, `ring` for focus emphasis, and `destructive` for destructive or invalid states, including their dark-mode counterparts.
 
 ## Typography
 
