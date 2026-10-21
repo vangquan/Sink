@@ -4,6 +4,23 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Shared vangquan.com interface face: Noto Sans 400/700 (Latin and Vietnamese subset), the same files as vangquan.com and the hub */
+@font-face {
+  font-family: 'VQ Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/noto-sans-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'VQ Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/noto-sans-700.woff2') format('woff2');
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -42,7 +59,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-sans: 'VQ Sans', 'Noto Sans', sans-serif;
   --font-heading: var(--font-sans);
 }
 

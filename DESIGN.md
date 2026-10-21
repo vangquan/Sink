@@ -71,9 +71,9 @@ colors:
   dark-sidebar-ring: "oklch(0.781 0.11 88.9)"
 typography:
   sans:
-    fontFamily: "IBM Plex Sans, sans-serif"
+    fontFamily: "VQ Sans, Noto Sans, sans-serif"
   heading:
-    fontFamily: "IBM Plex Sans, sans-serif"
+    fontFamily: "VQ Sans, Noto Sans, sans-serif"
 rounded:
   base: 0.625rem
   lg: 0.625rem
@@ -105,7 +105,7 @@ The unprefixed tokens reproduce the semantic roles in `:root`; `dark-*` tokens f
 
 ## Typography
 
-Use IBM Plex Sans for interface text. `heading` is an alias of the same family, not a separate display face. Components choose font size, weight, and line height with local utilities; this file does not define a global type scale.
+Use VQ Sans for interface text: self-hosted Noto Sans 400 and 700 from `public/fonts/`, the same files as vangquan.com and the hub. Other weights fall back to the nearest of those two. `heading` is an alias of the same family, not a separate display face. Components choose font size, weight, and line height with local utilities; this file does not define a global type scale.
 
 ## Layout
 
